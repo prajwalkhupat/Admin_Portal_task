@@ -43,3 +43,5 @@ Simulated APIs are used to mock real-world delays, server errors, and conflict s
    npm install
    npm run dev
 
+👉 [View the live demo](https://prajwaladminportal.netlify.app/)
+
