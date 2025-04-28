@@ -38,7 +38,7 @@ Simulated APIs are used to mock real-world delays, server errors, and conflict s
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/your-username/react-admin-portal.git
+   git clone https://github.com/prajwalkhupat/Admin_Portal_task.git
    cd react-admin-portal
    npm install
    npm run dev
