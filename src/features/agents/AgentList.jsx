@@ -29,7 +29,7 @@ function AgentList({ onEdit }) {
       loadAgents();
     } catch (error) {
       toast.error(error.message || "Failed to delete agent");
-      loadAgents(); // Reload anyway to get updated data if agent already deleted
+      loadAgents(); 
     }
   }
 
@@ -37,7 +37,7 @@ function AgentList({ onEdit }) {
     const updatedList = agents.map((a) =>
       a.id === id ? { ...a, isActive: !currentStatus } : a
     );
-    setAgents(updatedList); // Optimistic update
+    setAgents(updatedList); 
 
     try {
       await updateAgent(id, { isActive: !currentStatus });
@@ -46,7 +46,7 @@ function AgentList({ onEdit }) {
       toast.error(error.message || "Failed to update status");
       setAgents((prev) =>
         prev.map((a) => (a.id === id ? { ...a, isActive: currentStatus } : a))
-      ); // Rollback
+      ); 
     }
   }
 

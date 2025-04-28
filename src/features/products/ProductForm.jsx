@@ -11,7 +11,7 @@ function ProductForm({ selected, onClose, refresh }) {
       price: "",
       description: "",
       category: "",
-      status: "active",  // New: status field for soft delete
+      status: "active",  
     }
   );
 
